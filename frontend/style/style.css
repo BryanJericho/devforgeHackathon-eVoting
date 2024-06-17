@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --merah: #C80036;
+    --putih: #FCFFE7;
+    --birumuda: #BAD7E9;
+    --birutua: #2B3467;
+}
+body{
+    background-color: var(--putih);
+    font-family: Montserrat;
+}
+
+header{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    background-color: var(--merah);
+
+}
+.navbar-list{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    font-size: 1.1rem;
+    color: var(--putih);
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo span{
+    color: var(--putih);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.navbar-list li{
+    text-decoration: none;
+}
+
+.buat-akun{
+    padding: 10px;
+    border: 2px solid white;
+}
+main{
+    position: relative;
+    z-index: -3;
+}
+
+.welcome{
+    padding: 5px 70px;
+    margin-top: 4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2.7rem;
+    border: 1px solid black;
+
+}
+.welcome img{
+    width: 35%;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.text .sd{
+    color: var(--merah);
+    font-weight: bold;
+}
+.button-start{
+    padding: 10px;
+    border: 2px solid var(--merah);
+    width: 20%;
+    text-align: center;
+    color: var(--merah);
+    font-weight: bold;
+}
+
+.program{
+    padding: 20px 70px;
+    position: relative;
+    border: 1px solid black;
+}
+.program .text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.keunggulan{
+    padding: 20px 70px;
+    position: relative;
+    background-color: var(--merah);
+}
+.keunggulan .text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    color: var(--putih);
+}
+
+.keunggulan .list-keunggulan{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.nama-keunggulan{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid white;
+    text-align: justify;
+    color: var(--putih);
+    width: 300px;
+}
+.nama-keunggulan img{
+    color: var(--putih);
+}
+.kreator{
+    padding: 20px 70px;
+    position: relative;
+    align-items: center;
+    gap: 2.7rem;
+    border: 1px solid black;
+}
+
+.kreator h1{
+    text-align: center;
+}
+
+.kreator .team{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    gap: 1rem;
+    padding: 7px;
+}
+
+.kreator .foto-team{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url('../img/orang1\ \(1\).jpg');
+    border: 1px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.kreator .list-team{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.kreator .aaaa{
+    width: 200px;
+    height: 200px;
+}
+.team .name{
+    font-size: 1rem;
+}
+
+.kreator .sosmed{
+}
