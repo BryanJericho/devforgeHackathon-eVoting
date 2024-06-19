@@ -13,6 +13,7 @@
 body{
     background-color: var(--putih);
     font-family: Montserrat;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -47,8 +48,9 @@ header{
     font-weight: 700;
     font-size: 1.3rem;
 }
-.navbar-list li{
+.navbar-list a{
     text-decoration: none;
+    color: var(--putih);
 }
 
 .buat-akun{
@@ -59,7 +61,7 @@ main{
     position: relative;
 }
 
-.welcome{
+#beranda{
     padding: 25px 55px;
     margin-top: 4rem;
     display: flex;
@@ -67,7 +69,7 @@ main{
     gap: 3rem;
 }
 
-.welcome img{
+#beranda img{
     width: 30%;
 }
 
@@ -99,12 +101,12 @@ main{
     flex-direction: column;
     gap: 0.3rem;
 }
-.keunggulan{
+#keunggulan{
     padding: 35px 55px;
     position: relative;
     background-color: var(--merah);
 }
-.keunggulan .text{
+#keunggulan .text{
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -112,7 +114,7 @@ main{
     color: var(--putih);
 }
 
-.keunggulan .list-keunggulan{
+#keunggulan .list-keunggulan{
     display: flex;
     gap: 1.1rem;
     margin-top: 20px;
@@ -131,18 +133,18 @@ main{
 .nama-keunggulan img{
     color: var(--putih);
 }
-.kreator{
+#kreator{
     padding: 35px 55px;
     position: relative;
     align-items: center;
     gap: 2.7rem;
 }
 
-.kreator h1{
+#kreator h1{
     text-align: center;
 }
 
-.kreator .team{
+#kreator .team{
     display: flex;
     flex-direction: column;
     width: 250px;
@@ -153,8 +155,24 @@ main{
     border: 2px solid var(--merah);
     border-radius: 20px;
 }
-
-.kreator .arya{
+/*  */
+.svg-container {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+  }
+  
+  .svg-icon .svg-fill {
+    fill: rgb(235, 235, 235);
+    transition: fill 0.3s ease;
+  }
+  
+  .svg-icon:hover .svg-fill {
+    fill: rgb(77, 0, 0); /* Ubah warna fill pada hover */
+  }
+  
+/*  */
+#kreator .arya{
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -163,15 +181,15 @@ main{
     background-repeat: no-repeat;
     background-position: center;
 }
-.kreator .quotes{
+#kreator .quotes{
     font-style: italic;
 }
-.kreator .list-team{
+#kreator .list-team{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-.kreator .aaaa{
+#kreator .aaaa{
     width: 200px;
     height: 200px;
 }
