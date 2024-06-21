@@ -1,0 +1,58 @@
+/* Reset dasar untuk menghilangkan margin dan padding default */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Montserrat;
+}
+:root{
+    --merah: #C80036;
+    --putih: #FCFFE7;
+    --birumuda: #BAD7E9;
+    --birutua: #2B3467;
+}
+
+/* Flex container untuk halaman login */
+.login-screen {
+    display: flex;
+    height: 100vh; /* Pastikan kontainer mengambil seluruh tinggi viewport */
+}
+
+/* Flex item untuk div login */
+.login {
+    flex: 1; /* Ambil ruang yang tersisa */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Pusatkan konten secara vertikal */
+    align-items: center; /* Pusatkan konten secara horizontal */
+    padding: 20px;
+    background-color: var(--merah); /* Warna latar belakang opsional */
+    color: var(--putih);
+    border: 1px solid black;
+}
+
+/* Gaya untuk elemen input dan h1 dalam div login */
+.login h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Flex item untuk gambar */
+.login-screen img {
+    flex: 1; /* Ambil ruang yang tersisa */
+    object-fit: cover; /* Pastikan gambar mencakup seluruh area */
+    max-width: 100%; /* Batasi lebar gambar */
+    height: 100%; /* Pastikan gambar mengambil tinggi penuh dari flex item */
+}
